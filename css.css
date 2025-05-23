@@ -1,0 +1,87 @@
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 80vh;
+}
+
+#box
+{
+  text-align: center;
+  /* background-color: gray; */
+  margin: 10px;
+}
+#login
+{
+  color: antiquewhite;
+  font-family: 'Agave';
+  font-size: 30px;
+}
+input
+{
+  display: block;
+  margin: 20px;
+  background-color: black;
+  color: antiquewhite;
+  font-size: 27px;
+  font-family: 'Agave';
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-style:hidden;
+}
+
+input:focus
+{
+  border: hidden;
+}
+
+input:hover
+{
+  border: dotted;
+}
+
+#enter
+{
+  font-size: 25px;
+  font-family: 'Agave';
+  padding: 10px 20px;
+  background-color: black;
+  color:antiquewhite;
+  cursor: pointer;
+  border: hidden;
+  border-radius: 10px;
+}
+
+#enter:hover
+{
+  /* background-color: gray; */
+  border-style:dotted;
+}
+
+#enter:active
+{
+  transform: scale(0.9);
+}
+
+#circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #3498db98;
+  border-radius: 50%;
+  pointer-events: none; /*So it doesn’t block clicks*/
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s, transform 0.15 ease;
+  transition: left 0.1s ease, top 0.1s ease;
+}
+
+#circle:active
+{
+    transform: scale(0.8);
+    transform: translate(-50%, -50%);
+
+}
