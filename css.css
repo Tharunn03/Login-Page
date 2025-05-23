@@ -5,6 +5,7 @@ body
   align-items: center;
   background-color: black;
   height: 80vh;
+  cursor: none;
 }
 
 #box
@@ -40,6 +41,7 @@ input:focus
 input:hover
 {
   border: dotted;
+  cursor: none;
 }
 
 #enter
@@ -49,7 +51,6 @@ input:hover
   padding: 10px 20px;
   background-color: black;
   color:antiquewhite;
-  cursor: pointer;
   border: hidden;
   border-radius: 10px;
 }
@@ -58,11 +59,13 @@ input:hover
 {
   /* background-color: gray; */
   border-style:dotted;
+  cursor: none;
 }
 
 #enter:active
 {
   transform: scale(0.9);
+  transition: transform 0.2s ease;
 }
 
 #circle {
@@ -75,7 +78,7 @@ input:hover
   border-radius: 50%;
   pointer-events: none; /*So it doesn’t block clicks*/
   transform: translate(-50%, -50%);
-  transition: background-color 0.3s, transform 0.15 ease;
+  transition: background-color 0.5s, transform 0.5 ease;
   transition: left 0.1s ease, top 0.1s ease;
 }
 
